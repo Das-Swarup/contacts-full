@@ -12,4 +12,5 @@ app.use(cors());
 app.use("/", router)
 app.use("/api/allcontacts", router)
 app.use("/api/addcontacts", router)
+app.use("/api/deletecontacts/:id", router)
 app.listen(port, ()=> console.log("Server started at port 8000"))
